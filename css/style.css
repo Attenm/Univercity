@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,700&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --indigo: #34497C;
+    --lightblue: #4B69B1;
+    --silver: #585858;
+    --ligtsilver: #828282;
+    --orange: #FBA702;
+    --darkindigo: #253458;
+    --black: #000;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: var(--silver);
+    background-color: #E5E5E5;
+}
+
+/* Top section */
+
+.top {
+    background-color: var(--indigo);
+    padding: 30px 0;
+    color: #fff;
+}
+
+.top p {
+    margin: 0!important;
+}
+
+.logo {
+    text-align: center;
+}
+
+/* First screen */
+
+.first-screeen {
+    background-image: url(../img/university-img.jfif);
+    min-height: calc(100vh - 110px);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+}
+
+form {
+    background-color: var(--lightblue);
+    color: #fff;
+    padding: 50px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first-screeen h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    background-image: url(../img/line.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.first-screeen span {
+    background-color: var(--lightblue);
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.first-screeen p {
+    font-size: 1.5em;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    display: block;
+    height: 50px;
+    background-color: var(--darkindigo);
+    color: #fff;
+    
+}
+
+input {  
+    width: 100%;  
+    margin-bottom: 15px;
+    padding: 0 24px; 
+}
+
+/* ____________виправити помилку текст  та додати відступи */
+
+input:focus {
+    color: #fff;
+    background-color: var(--indigo);
+}
+
+button {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 24px;
+    padding: 0 24px;
+}
+
+.lenta {
+    background-image: url(../img/Group7.svg);
+    height: 117px;
+    margin: 30px -26px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenta::after,
+.lenta::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #A86F00;
+    position: absolute;
+    bottom: -13px;
+}
+
+.lenta::before {  
+    border-left: 13px solid transparent;
+    left: 0;  
+}
+
+.lenta.lenta::after {
+    border-right: 13px solid transparent;    
+    right: 0;  
+}
+
+.steps {
+    background-image: url(../img/bg-image.png);
+}
+
+.gallery {
+
+}
+
+.testimonials {
+    background-image: url(../img/bg-yellow.jfif);
+}
+
+.videosection {
+
+}
+
+.subscribe {
+    background-color: var(--orange);
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        text-align: left;
+    }
+    
+    .first-screeen {
+        padding: 70px 0;
+    }
+}
