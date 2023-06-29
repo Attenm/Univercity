@@ -44,17 +44,17 @@ body {
 
 .first-screeen {
     background-image: url(../img/university-img.jfif);
-    min-height: calc(100vh - 110px);
+    min-height: calc(100vh - 100px);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     padding: 15px 0;
 }
 
-form {
+.first-screeen form {
     background-color: var(--lightblue);
     color: #fff;
-    padding: 50px 15px;
+    padding: 60px 72px 30px;
     text-align: center;
     font-weight: bold;
 }
@@ -93,8 +93,6 @@ input {
     padding: 0 24px; 
 }
 
-/* ____________виправити помилку текст  та додати відступи */
-
 input:focus {
     color: #fff;
     background-color: var(--indigo);
@@ -112,7 +110,8 @@ button {
 .lenta {
     background-image: url(../img/Group7.svg);
     height: 117px;
-    margin: 30px -26px;
+    margin: 30px -86px;
+    margin-bottom: 40px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -125,46 +124,228 @@ button {
     display: block;
     width: 0;
     height: 0;
-    border-top: 13px solid #A86F00;
+    border-top: 14px solid #A86F00;
     position: absolute;
-    bottom: -13px;
+    bottom: -14px;
 }
 
 .lenta::before {  
-    border-left: 13px solid transparent;
+    border-left: 14px solid transparent;
     left: 0;  
 }
 
 .lenta.lenta::after {
-    border-right: 13px solid transparent;    
+    border-right: 14px solid transparent;    
     right: 0;  
 }
 
 .steps {
     background-image: url(../img/bg-image.png);
+    padding: 53px 0;
+}
+
+.text-box h2 {
+    font-size: 28px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--indigo);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--silver);
+    margin-bottom: 15px;
+}
+
+.card {
+    border-radius: 0;
+    border: 0;
+    max-width: 342px;
+    background-color: transparent;
+}
+
+.first .card h4 {
+    color: var(--darkindigo);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.5px;
+}
+
+.first .card p {
+    color: var(--silver);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0 23px;
+}
+
+.card-label {
+    background-color: var(--darkindigo);
+    padding: 35px 85px;
+    display: flex;
+    margin-bottom: 11px;
+    justify-content: center;
 }
 
 .gallery {
+    padding: 53px 0;
+    background-color: #fff;
+}
 
+.second .card p {
+    color: #C4C4C4;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 20px 23px;
 }
 
 .testimonials {
-    background-image: url(../img/bg-yellow.jfif);
+    background-image: url(../img/gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0;
+}
+
+.avatar-item {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--orange);
+}
+
+.avatar-item img {
+   width: 100%;
+}
+
+.text p {
+    color: var(--darkindigo);
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 45px;
+    position: relative;
+}
+
+.text p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 176px;
+    height: 4px;
+    margin-top: 32px;
+    left: calc(50% - 88px);
+    background-color: var(--darkindigo);
+}
+
+.text {
+    padding-bottom: 55px;
+}
+
+.support span {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-transform: uppercase;
 }
 
 .videosection {
+    padding: 53px 0;
+}
 
+.premiering img {
+    max-width: 100%;
+}
+
+.premiering li {
+    color: #747171;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 37px;
+    padding-left: 40px;
+    list-style: none;
+    background-image: url(../img/liststyle.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .subscribe {
     background-color: var(--orange);
+    padding: 30px 0;
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
 }
+
+.subscribe p {
+    margin: 0;
+    text-align: center;
+}
+
+.subscribe form {
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.subscribe input {
+    background-color: #fff;
+    padding: 0;
+    color: #000;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.subscribe button {
+    border-radius: 5px;
+    background: #A86F00;
+    line-height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    width: 100%;
+    max-width: 216px;
+    text-transform: uppercase;
+}
+
 
 .footer {
     background-color: var(--black);
 }
 
-@media screen and (min-width:768px) {
+.footer h4 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #FBA702;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.contacts img {
+    padding-right: 20px;
+}
+
+@media screen and (min-wicolor: #FBA702;dth:768px) {
     .logo {
         text-align: left;
     }
