@@ -54,10 +54,11 @@ body {
 .first-screeen form {
     background-color: var(--lightblue);
     color: #fff;
-    padding: 60px 72px 30px;
     text-align: center;
     font-weight: bold;
+    position: relative;
 }
+
 
 .first-screeen h2 {
     text-transform: uppercase;
@@ -93,6 +94,8 @@ input {
     padding: 0 24px; 
 }
 
+
+
 input:focus {
     color: #fff;
     background-color: var(--indigo);
@@ -110,12 +113,14 @@ button {
 .lenta {
     background-image: url(../img/Group7.svg);
     height: 117px;
-    margin: 30px -86px;
+    margin: 30px -64px;
     margin-bottom: 40px;
-    position: relative;
     display: flex;
+    width: calc(100% + 28px);
+    left: 50px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .lenta::after,
@@ -345,7 +350,7 @@ button {
     padding-right: 20px;
 }
 
-@media screen and (min-wicolor: #FBA702;dth:768px) {
+@media screen and (min-width:768px) {
     .logo {
         text-align: left;
     }
